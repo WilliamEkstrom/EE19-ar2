@@ -1,0 +1,35 @@
+body{
+
+}
+form{
+    background: rgba(20, 69, 114, 0.877);
+    margin: 100px auto;
+    width: 600px;
+    padding: 30px;
+    border-radius: 19px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 10px;
+}
+form label{
+    font-family: 'Montserrat', sans-serif;
+}
+form input{
+    font-family: 'B612 Mono', monospace;
+    padding: 5px;
+    background: rgb(95, 174, 238);
+    border: none;
+    border-radius: 5px;
+}
+form button{
+    background: linear-gradient(90deg, rgba(1,187,238,1) 22%, rgba(255,0,160,1) 100%);
+
+}
+form button:hover{
+    box-shadow: rgb(2, 241, 34);
+}
+form button:active{
+    background: rgba(1,187,238,1);
+}
+
+  
