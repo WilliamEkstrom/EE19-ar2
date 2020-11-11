@@ -1,0 +1,50 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* sidans utseende */
+body {
+    background: url(./bilder/bg.jpg);
+}
+.kontainer {
+    background: #ffffff9a;
+    width: 700px;
+    margin: 100px auto;
+    padding: 25px;
+    border-radius: 3px;
+}
+h1{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 40px;
+}
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+}
+form{
+    display: grid;
+    grid-template-columns: 125px auto;
+    gap: 20px;
+}
+form button{
+    background: #bfd255;
+    border: none;
+    padding: 5px;
+    transition: all 0.5s;
+}
+form button:hover{
+
+}
+textarea{
+    width: 200px;
+    margin: auto;
+}
+
