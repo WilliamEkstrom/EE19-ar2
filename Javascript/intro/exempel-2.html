@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        // Läs in år
+        var år;
+        år = prompt("Vilket år är det nu?");
+
+        // Läs in ålder
+        var ålder;
+        ålder = prompt("Hur gammal är du nu?");
+
+        // Svara vilket år man blir tjugo
+        var svaret;
+        svaret = 20 - parseInt(ålder) + parseInt(år); 
+        confirm("Du blir tjugo år " + svaret);
+
+    </script>
+</body>
+</html>
