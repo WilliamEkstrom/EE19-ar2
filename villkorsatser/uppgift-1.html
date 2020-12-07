@@ -1,0 +1,32 @@
+!<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Inloggning</h1>
+        <button onclick="inloggning()"> Ange lösenord</button>
+
+    </div>
+    <script>
+        function inloggning() {
+            var lösenord = prompt("Ange ett lösenord");
+            
+            // Om lösenordet är är rätt svara Rätt!
+            if (lösenord == "jacob2ss") {
+                document.body.style.cssText = "background: blue";   
+                alert("Bra jobbat!")
+                
+            } else {
+                document.body.style.cssText = "background: red";
+                alert(" Fel lösenord!")
+                window.loaction.href = ""
+            }
+        }
+    </script>
+</body>
+</html>
