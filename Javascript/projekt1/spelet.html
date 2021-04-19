@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interaktiv Berättelse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Interaktiv Berättelse</h1>
+
+    </div>
+
+    <script>
+        // En variabel som frågar vad du vill göra
+        var fråga = prompt("Du går in i huset (Vill du ta den högra dörren eller den vänstra dörren?)");
+
+        // Välj dörr
+        if (fråga == "högra dörren" || fråga == "vänstra dörren") {
+
+            // En variabel som frågar vad du vill göra
+            var svar = prompt("I den högra dörren hittar du en korridor. (Vill du gå genom korridoren eller gå ut igen?)");
+
+            // Om du tar korridoren
+            if (svar == "ta korridoren" || svar == "gå genom korridoren" || svar == "korridoren") {
+               
+                // Om du tog korridoren
+                alert("Du går genom korridoren och hittar en till dörr");
+                
+                // Om du ville öppna dörren
+                var svar = prompt("Dörren är låst.(Vill du öppna dörren eller gå ut ur huset?)")
+                if (svar == "öppna dörren") {
+                    
+                // Du öppnade dörren
+                var svar ="Det är ett svart hål neråt. (Vill du hoppa ner i hålet?)"
+                if (svar == hoppa ner i hålet) {
+                    
+                } 
+                } 
+            } 
+        } 
+    </script>
+</body>
+</html>
