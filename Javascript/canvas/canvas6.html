@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skriva en text</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="kontainer">
+        <div class="sliderbar">
+            <h1>Canvas</h1>
+        </div>
+        <canvas></canvas>
+    </div>
+    <script defer>
+         // Hitta canvas-elementet
+         const rityta = document.querySelector("canvas");
+
+        // Gör ritytan större
+        rityta.width = 600;
+        rityta.height = 600; 
+
+        // Slå på ritmotorn (rit-api)
+        var ctx = rityta.getContext("2d");
+
+        // Stilar 
+        ctx.fillStyle = "red";
+        ctx.fillRect(100, 100, 50, 50);
+        
+        // Vi använder variabel
+        var x = 100;
+        var y = 200; 
+        ctx.fillStyle = "yellow";
+        ctx.fillRect(x, y, 50, 50);
+        x = 200;
+        ctx.fillRect(x, y, 50, 50);
+        x = 300;
+        ctx.fillRect(x, y, 50, 50);
+        x = 400;
+        ctx.fillRect(x, y, 50, 50);
+
+        // En rad med 3 blå fyrkanter på y 300
+        y = 300
+        ctx.fillStyle = "blue";
+        x = 100
+        ctx.fillRect(x, y, 50, 50);
+        x = 200;
+        ctx.fillRect(x, y, 50, 50);
+        x = 300;
+        ctx.fillRect(x, y, 50, 50);
+        x = 400;
+        ctx.fillRect(x, y, 50, 50);
+     
+    </script>
+</body>
+</html>

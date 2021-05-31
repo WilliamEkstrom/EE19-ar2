@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Läsa av input-rutor</h1>
+        <h2>Input</h2>
+        <label>Ange förnamn <input class="fnamn" type="text"></label>
+        <label>Ange efternamn <input class="enamn" type="text"></label>
+        <label>Ange ålder <input class="ålder" type="text"></label>
+        <button>Skicka</button>
+        <h2>Output</h2>
+        <label>Svar <textarea></textarea></label>
+    </div>
+    <script>
+        const rutaFnamn = document.querySelector(".fnamn");
+        const rutaEnamn = document.querySelector(".enamn");
+        const rutaÅlder = document.querySelector(".ålder");
+        const knappen = document.querySelector("button");
+        const rutaSvar = document.querySelector("textarea");
+
+
+        knappen.addEventListener("click", function () {
+            // Läsa av 
+            console.log(rutaFnamn.value);
+            console.log(rutaEnamn.value);
+        
+        
+            // Skriva ut
+            // rutaSvar.value = "Hej hej " + rutaFnamn.value + " " + rutaEnamn.value + " du är: " + rutaÅlder.value + " år gammal, hur mår du?";
+
+            // Om man är 18 får man köra bil
+            if (rutaÅlder.value >= 18) {
+                rutaSvar.value = "Grattis " + rutaFnamn.value + " " + rutaEnamn + " du får köra bil!";
+            } else {
+                rutaSvar.value = "Tyvärr " + rutaEnamn.value + " " + rutaEnamn + " du får inte köra bil.";
+            }
+
+        });
+    </script>
+</body>
+</html>
